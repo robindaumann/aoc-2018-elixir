@@ -13,7 +13,7 @@ defmodule AocDay08Test do
 
   test "Solve part 2 full" do
     path = "input/day_08.txt"
-    assert Day08.part2(path) == {:ok, 999}
+    assert Day08.part2(path) == {:ok, 20611}
   end
 
   test "Solve part 2 example" do
