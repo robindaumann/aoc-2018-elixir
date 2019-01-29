@@ -1,4 +1,4 @@
-defmodule AocDay07Test do
+defmodule Day07Test do
   use ExUnit.Case
 
   test "Full input" do

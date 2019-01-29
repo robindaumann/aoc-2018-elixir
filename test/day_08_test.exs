@@ -1,4 +1,4 @@
-defmodule AocDay08Test do
+defmodule Day08Test do
   use ExUnit.Case, async: true
 
   test "Solve part 1 full" do
