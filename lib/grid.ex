@@ -1,5 +1,5 @@
 defmodule Grid do
-  defstruct points: [], yrange: :infinity
+  defstruct points: [], yrange: :infinity, steps: 0
 
   def grid(points) do
     %Grid{points: points}
@@ -15,7 +15,7 @@ defmodule Grid do
     if yrange > prev_yrange do
       {:stop, grid}
     else
-      {:ok, %{grid | points: points, yrange: yrange}}
+      {:ok, %{grid | points: points, yrange: yrange, steps: grid.steps+1}}
     end
   end
 
@@ -33,7 +33,7 @@ defmodule Grid do
       IO.puts("")
     end)
 
-    grid
+    IO.puts("Steps #{grid.steps}")
   end
 
   defp min_max(set, dir) do
