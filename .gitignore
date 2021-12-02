@@ -25,3 +25,6 @@ aoc_day_07-*.tar
 /.elixir_ls/
 
 /.vscode/
+
+# do not include inputs anymore
+/input/
